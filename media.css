@@ -1,0 +1,100 @@
+
+
+@media only screen and (min-width: 200px) and (max-width: 766px)  {
+    .outer-wrap{
+        width: 100%;
+    }
+    .header-wrap, .content-wrap{
+        width: 100%;
+
+    }
+    
+    .contain .innercont{
+        width: 100%;
+    }
+    
+    .contain-left h1{
+        font-size: 34px;
+    }
+    .contain-left p {
+        font-size:16px;
+    }
+    main{
+        flex-direction: column;
+        margin: auto 10px;
+        width: 100%;
+    }
+
+    .contain-left {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .imgdisp{
+        width: 100%;
+        object-fit: contain;
+        background-repeat: no-repeat;
+
+    }
+    .maps {
+        left: 270px;
+    }
+    .award {
+        top: 100px;
+        right: 0px;
+    }
+    .rating {
+        right: 0px;
+    }
+
+    .explore-warp{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+  }
+
+    .explore-group {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 0 0 10px 0;
+        height: 25vh;
+  }
+  .explore-groupL{
+    width: 100%;
+  }
+  .ex-loc, .ex-Date, .ex-Guest {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    
+  }
+  .explore-groupR a {
+   
+    width: 145px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .ex-loc p, .ex-Date p, .ex-Guest p{
+    font-size: 14px;
+  }
+  .ex-loc::before {
+    left: 50px;
+    top: 15px;
+}
+.ex-Date::before {
+    left: 35px;
+    top: 15px;
+}
+.ex-Guest::before {
+    left: 40px;
+    top: 15px;
+}
+
+
+}
+  @media only screen and (min-width: 767px) and (max-width: 1920px)  {
+    
+}
+
