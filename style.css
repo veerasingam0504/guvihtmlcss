@@ -225,7 +225,7 @@ nav a {
     align-items: center;
     border-radius: 10px;
      font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #444444;
     text-align: left;
     font-style: normal;
@@ -245,10 +245,11 @@ nav a {
 .hero-image div:nth-child(2) span p, .hero-image div:nth-child(3) span p{
     font-size: 12px;
     color: #666666;
+    font-weight: 400;
 }
 
 .hero-image img {
-    width: 500px;
+    /* width: 500px; */
     height: auto;
     max-width: 500px;
     border-radius: 8px;
@@ -342,7 +343,7 @@ nav a {
     border-radius: 10px;
     justify-content: space-between;
     gap: 20px;
-    width: 70%;
+    width: calc(100% - 300px)
 }
 
 .booking-4col-content div b {
@@ -465,16 +466,22 @@ nav a {
 
 .exclus_txtwrap div:nth-child(1) i {
     object-fit: cover;
-    /* width: 13px;
-     height: 16px; */
+    width: 16px;
+    /* height: 13px; */
     margin-right: 5px;
 }
 
-.exclus_txtwrap div:nth-child(1), .exclus_txtwrap div:nth-child(2) {
+.exclus_txtwrap div:nth-child(1), .exclus_txtwrap div:nth-child(2){
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+    align-items: center;
+}
+.exclus_txtwrap div span:nth-child(1){
+    font-size: 1.5rem;
+}
+.exclus_txtwrap div:nth-child(1), .exclus_txtwrap div:nth-child(2){
+    color: #666666;
 }
 .exclus_txtwrap .p {
     display: block;
@@ -486,27 +493,23 @@ nav a {
     display: flex;
 }
 .exclus_txtwrap .p i{margin-right: 10px};
+
 .exclus_txtwrap div:nth-child(1) i {
     object-fit: cover;
     width: 16px;
-    height: auto;
+    /* height: 13px; */
+
     margin-right: 5px;
 }
 
-.exclus_txtwrap div:nth-child(1), .exclus_txtwrap div:nth-child(2) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-      font-size: 16px;
-    color: #666666;
-}
+
 .h_txt{
   display: block;
     /* padding: 20px 0 35px 0; */
     font-size: 24px;
     font-weight: 600;
-        margin-top: 30px;
-    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
     color: #222222;
 
 }
@@ -536,50 +539,16 @@ nav a {
 .sub{
     margin-top: 250px;
 }
-
-
-/* 
-.card-boxupbox {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+.noshadows{
+    box-shadow: none;
+    background: none;
 }
-.card-boxupbox div{
-    width: 50%;
-    border: 1px solid red;
-    
+.noshadows .h_txt2{
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-
-.card-boxupbox div:nth-child(1){
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0;
-}
-.card-boxupbox div:nth-child(1){
-    display: flex;
-    flex-direction: column;
-    padding: 30px 0;
-}
-
-.card-boxupbox div:nth-child(2){
-   position: relative;
-    border: 1px solid rgb(123, 0, 255);
-}
-.card-boxupbox div .userfed{
-    border: 1px solid rgb(255, 0, 89);
-    position: absolute;
-}
-
-
-.boxupbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    width: 50%;
-    z-index: 0;
-    position: relative;
-    padding: calc(1rem + 2rem);
+.h_txt3{
+    margin: 10px 0;
 }
 
 
@@ -939,3 +908,6 @@ footer .r_wrap ul li:nth-child(1) {
     color: #ffffff;
 }
 
+
+
+/*  */
