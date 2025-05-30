@@ -160,6 +160,7 @@ header{
 .slider-track {
   display: flex;
   gap: 10px;
+  padding-bottom: 20px;
 }
 
 .slide {
@@ -195,6 +196,12 @@ header{
 .cost span:nth-child(1), .cost span:nth-child(2) {
     font-size: 0.9rem;
      margin-right: 2px;
+}
+.exclus_txtwrap div span:nth-child(1){
+    font-size: 1rem;
+}
+.exclus_txtwrap .p i {
+    margin-right: 2px;
 }
 .h_txt span:nth-child(2){
     font-size: 1rem;
@@ -316,13 +323,17 @@ width: 153px;
     width: 26px;
     margin-right: 5px;
 }
+.noshadows .h_txt2 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }
-.dummy{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+.linebg-1::before,.linebg-2::before, .linebg-3::before{
+    display: none;
 }
 
+}
 /* Responsive - 1 column */
 @media (max-width: 600px) {
 .sign a:nth-child(2){
@@ -431,5 +442,10 @@ left: 310px;
     width: 22px;
     margin-right: 5px;
 }
-
+.noshadows .h_txt2 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
 }

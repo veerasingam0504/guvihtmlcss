@@ -432,6 +432,7 @@ nav a {
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
+  position: relative;
 }
 .card_pads{
      padding: 40px 30px 42px 30px;
@@ -451,6 +452,7 @@ nav a {
     margin-top: 20px;
     margin-bottom: 18px;
      display: block;
+     z-index: 1;
 }
 .card p{
      font-size: 16px;
@@ -458,15 +460,38 @@ nav a {
     font-style: normal;
     color: #666666;
      display: block;
+     z-index: 1;
 }
-
+/* .linebg{
+     background-image: url(./asset/b0_linebg.svg);
+     background-repeat: no-repeat;
+     width: 367px;
+     height: 274px;
+     position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+.linebg-1::before{
+     content: url("./asset/b0_linebg.svg");
+     position: absolute;
+     left: 0;
+    top: -4px;
+}
+.linebg-2::before{
+     content: url("./asset/b0_linebg.svg");
+     position: absolute;
+    left: 0;
+    top: -15px;
+    -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
 .exclus_txtwrap {
     padding: 0 20px 30px 20px;
 }
 
 .exclus_txtwrap div:nth-child(1) i {
     object-fit: cover;
-    width: 16px;
+    width: 1rem;
     /* height: 13px; */
     margin-right: 5px;
 }
@@ -544,8 +569,11 @@ nav a {
     background: none;
 }
 .noshadows .h_txt2{
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #222222;
 }
 .h_txt3{
     margin: 10px 0;
